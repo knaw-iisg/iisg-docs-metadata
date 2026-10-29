@@ -14,7 +14,8 @@ graph).
 > testing purposes, the documentation and its examples use another endpoint
 > (`https://sparql.zijdeman.nl`), which runs a newer version of the graph.
 > The IRIs are the same, but not every example gives the same results on
-> the official endpoint.
+> the official endpoint. The knowledge base viewer (`https://kb.zijdeman.nl`)
+> is experimental too.
 
 This repository holds the *source* of that website. The Markdown files in
 `docs/` are turned into the HTML site automatically on every push to `main`.
@@ -27,7 +28,8 @@ and a browser just shows the XML tree, e.g.
 <https://api.socialhistoryservices.org/solr/all/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:socialhistoryservices.org:1292895>.
 
 To read a record as a web page, with its creators, subjects and places as
-clickable links, use the **knowledge base viewer**: <https://kb.zijdeman.nl>.
+clickable links, use the **knowledge base viewer** (experimental, like the
+test SPARQL endpoint it runs on): <https://kb.zijdeman.nl>.
 Search for anything, or open a record directly by putting its IRI after `#`.
 For example, the T-shirt used throughout the tutorial:
 
@@ -36,6 +38,10 @@ For example, the T-shirt used throughout the tutorial:
 (OAI identifier `oai:socialhistoryservices.org:1292895` → IRI
 `https://iisg.amsterdam/id/item/1292895`; see the
 [IRI reference](https://knaw-iisg.github.io/iisg-docs-metadata/reference/iris/).)
+
+You can also build your own interface like this. The viewer has no server
+of its own: it is a single web page that sends SPARQL queries from the
+browser. See [its source](https://github.com/knaw-iisg/iisg-kb-viewer).
 
 ## Working on the docs
 

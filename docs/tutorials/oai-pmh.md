@@ -19,8 +19,8 @@ visual-material collections. For the full list of sets and formats, see the
 !!! info "Looking for a web page, not XML?"
     OAI-PMH is for harvesting scripts. Every link on this page returns raw
     XML, and your browser just shows the XML tree. To *read* a record as a
-    web page, use the [knowledge base viewer]({{ kb_viewer }}). The example
-    record used below looks like
+    web page, use the [knowledge base viewer]({{ kb_viewer }}) (experimental).
+    The example record used below looks like
     [this in the viewer]({{ kb_viewer }}/#https%3A%2F%2Fiisg.amsterdam%2Fid%2Fitem%2F1292895).
 
 !!! danger "Fair use: Harvest responsibly to keep access"
@@ -54,7 +54,8 @@ visual-material collections. For the full list of sets and formats, see the
 - *search*. OAI-PMH has no full-text or field queries. For questions across
   records, use the [SPARQL endpoint](../reference/iris.md#sparql-endpoint).
 - look up a single record you already know. `GetRecord` works, but the
-  [knowledge base viewer]({{ kb_viewer }}) is easier for people.
+  [knowledge base viewer]({{ kb_viewer }}) (experimental) is easier for
+  people.
 
 ## How a harvest works
 
@@ -317,7 +318,7 @@ oai:socialhistoryservices.org:1292895 (datestamp 2022-03-08T13:09:05.799Z)
 
 The `(NL-AMISG)` pointers are now typed links: an organisation as creator, a
 place, a topic. The topic itself links on to the Library of Congress subject
-heading (`sdo:sameAs`). You can also open the IRI in the
+heading (`sdo:sameAs`). You can also open the IRI in the experimental
 [viewer]({{ kb_viewer }}) to browse the same links.
 
 ## Summary

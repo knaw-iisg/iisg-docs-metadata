@@ -56,7 +56,8 @@ GROUP BY ?authority ?type
 | | Official | Used in this documentation (test) |
 |---|---|---|
 | SPARQL endpoint | `{{ official_sparql }}` | `{{ sparql_endpoint }}` |
-| Query UI / browser | <{{ official_kg }}> | <{{ query_ui }}>, <{{ kb_viewer }}> |
+| Query UI | <{{ official_kg }}> | <{{ query_ui }}> |
+| Viewer | – | <{{ kb_viewer }}> (experimental) |
 
 Both speak the standard SPARQL 1.1 protocol (GET or POST).
 
