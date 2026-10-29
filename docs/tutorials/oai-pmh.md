@@ -257,6 +257,13 @@ Print identifier, datestamp and title for the first 200 archives:
 
 ### A complete harvest
 
+!!! warning "Remember the fair-use rules"
+    The script below sends one request at a time and waits a second between
+    pages. Don't remove that pause, and don't run several copies at once:
+    clients that overload the endpoint are blocked. The full library set is
+    more than 6,000 pages, so plan for hours, not minutes. Then switch to
+    `--from`.
+
 This script follows resumption tokens, retries on time-outs, handles
 `noRecordsMatch`, and writes each page to disk. It supports `--from` for
 incremental runs.
@@ -269,12 +276,6 @@ incremental runs.
 python oai_harvest.py iish.archieven ead archives/
 python oai_harvest.py iish.archieven ead archives-delta/ --from 2026-10-01T00:00:00Z
 ```
-
-!!! warning "Remember the fair-use rules"
-    The script sends one request at a time and waits a second between pages.
-    Don't remove that pause, and don't run several copies at once: clients
-    that overload the endpoint are blocked. The full library set is more than
-    6,000 pages, so plan for hours, not minutes. Then switch to `--from`.
 
 ## Step 9: Follow a record into the knowledge graph
 

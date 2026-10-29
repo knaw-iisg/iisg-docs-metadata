@@ -7,6 +7,15 @@ graph).
 
 **<https://knaw-iisg.github.io/iisg-docs-metadata/>**
 
+> [!WARNING]
+> **Beta.** This documentation is new and still changing.
+>
+> IISG's official SPARQL endpoint is **<https://iisg.amsterdam/kg>**. For
+> testing purposes, the documentation and its examples use another endpoint
+> (`https://sparql.zijdeman.nl`), which runs a newer version of the graph.
+> The IRIs are the same, but not every example gives the same results on
+> the official endpoint.
+
 This repository holds the *source* of that website. The Markdown files in
 `docs/` are turned into the HTML site automatically on every push to `main`.
 Start with the [OAI-PMH tutorial](https://knaw-iisg.github.io/iisg-docs-metadata/tutorials/oai-pmh/).

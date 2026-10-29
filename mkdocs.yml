@@ -5,6 +5,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.sections
     - navigation.footer
@@ -26,6 +27,11 @@ theme:
 # domain here only. examples/oai_to_sparql.py carries its own copy of
 # sparql_endpoint; CI fails if the two differ.
 extra:
+  # IISG's official knowledge graph (TriplyDB). The docs' examples run
+  # against the test endpoint below instead, which has the newer graph.
+  official_kg: https://iisg.amsterdam/kg
+  official_sparql: https://api.druid.datalegend.net/datasets/IISG/iisg-kg/services/iisg-kg/sparql
+  # Test endpoint used throughout the documentation.
   sparql_endpoint: https://sparql.zijdeman.nl
   query_ui: https://kg.zijdeman.nl
   kb_viewer: https://kb.zijdeman.nl

@@ -47,11 +47,18 @@ GROUP BY ?authority ?type
 
 ## SPARQL endpoint
 
-| | |
-|---|---|
-| Endpoint | `{{ sparql_endpoint }}` (GET or POST, standard SPARQL 1.1 protocol) |
-| Query UI | <{{ query_ui }}> |
-| Browser | <{{ kb_viewer }}> |
+!!! warning "Test endpoint"
+    The examples in this documentation use a **test** endpoint. IISG's
+    official knowledge graph is [{{ official_kg | replace("https://", "") }}]({{ official_kg }}).
+    It uses the same IRIs, but some examples give fewer results there. See
+    [beta](../index.md#beta).
+
+| | Official | Used in this documentation (test) |
+|---|---|---|
+| SPARQL endpoint | `{{ official_sparql }}` | `{{ sparql_endpoint }}` |
+| Query UI / browser | <{{ official_kg }}> | <{{ query_ui }}>, <{{ kb_viewer }}> |
+
+Both speak the standard SPARQL 1.1 protocol (GET or POST).
 
 Main vocabularies: [schema.org](https://schema.org) (`sdo:`),
 [RiC-O](https://www.ica.org/standards/RiC/ontology) for archives, MARC

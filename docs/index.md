@@ -5,6 +5,22 @@ archives, library material, serials, posters, photographs and audiovisual
 collections on the history of work, workers and social movements. This site
 explains how to get that metadata out in bulk and how to query it as Linked Data.
 
+## Beta
+
+!!! warning "Beta"
+    **This documentation is new.** Pages, examples and URLs may still
+    change. Feedback is welcome at [data@iisg.nl](mailto:data@iisg.nl).
+
+    **The SPARQL endpoint in the examples is a test endpoint.** IISG's
+    official knowledge graph is at [{{ official_kg | replace("https://", "") }}]({{ official_kg }}),
+    with its SPARQL service at `{{ official_sparql }}`. For testing purposes,
+    this documentation uses another endpoint, `{{ sparql_endpoint }}`, which
+    runs a newer version of the graph. The IRIs are the same on both, but
+    not every example gives the same results on the official endpoint. For
+    example, names of topics and places are not yet available there.
+
+    The OAI-PMH endpoint is not affected: it is IISG's production service.
+
 ## Which service should I use?
 
 | I want to… | Use |
