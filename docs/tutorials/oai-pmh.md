@@ -16,6 +16,13 @@ records, about 5,500 archives and collections, and audiovisual and
 visual-material collections. For the full list of sets and formats, see the
 [endpoint reference](../reference/oai-pmh.md).
 
+!!! info "Looking for a web page, not XML?"
+    OAI-PMH is for harvesting scripts. Every link on this page returns raw
+    XML, and your browser just shows the XML tree. To *read* a record as a
+    web page, use the [knowledge base viewer]({{ kb_viewer }}). The example
+    record used below looks like
+    [this in the viewer]({{ kb_viewer }}/#https%3A%2F%2Fiisg.amsterdam%2Fid%2Fitem%2F1292895).
+
 !!! danger "Go easy on the endpoint, or you will be cut off"
     The OAI-PMH endpoint is a shared service with limited capacity. It also
     serves IISG's own catalogue and search. To keep it available for
