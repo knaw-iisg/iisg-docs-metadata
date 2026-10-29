@@ -23,7 +23,7 @@ visual-material collections. For the full list of sets and formats, see the
     record used below looks like
     [this in the viewer]({{ kb_viewer }}/#https%3A%2F%2Fiisg.amsterdam%2Fid%2Fitem%2F1292895).
 
-!!! danger "Go easy on the endpoint, or you will be cut off"
+!!! danger "Fair use: Harvest responsibly to keep access"
     The OAI-PMH endpoint is a shared service with limited capacity. It also
     serves IISG's own catalogue and search. To keep it available for
     everyone:

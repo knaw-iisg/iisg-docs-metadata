@@ -13,7 +13,7 @@
 | Identifier scheme | `oai:socialhistoryservices.org:<local id>` |
 | Contact | [data@iisg.nl](mailto:data@iisg.nl) |
 
-!!! danger "Fair use"
+!!! danger "Fair use: Harvest responsibly to keep access"
     This is a shared service with limited capacity. Send **one request at a
     time**, never in parallel, and wait for each response before sending the
     next. Back off when you get errors or time-outs. Clients that overload
