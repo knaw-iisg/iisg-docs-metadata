@@ -11,7 +11,7 @@ explains how to get that metadata out in bulk and how to query it as Linked Data
 |---|---|
 | Download a whole collection, or keep a local copy in sync | [OAI-PMH](tutorials/oai-pmh.md) |
 | Ask questions across collections ("all posters about women's suffrage made in the Netherlands") | [SPARQL endpoint](reference/iris.md#sparql-endpoint) |
-| Browse records and their links in a web page | [Knowledge base viewer](https://kb.zijdeman.nl) |
+| Browse records and their links in a web page | [Knowledge base viewer]({{ kb_viewer }}) |
 
 Both services describe the same records. The OAI-PMH endpoint serves the
 catalogue records as the cataloguers made them (MARC, EAD, Dublin Core). The

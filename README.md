@@ -18,3 +18,9 @@ Run them against the live endpoints before changing a tutorial:
 .venv/bin/python examples/oai_harvest.py iish.archieven marcxml /tmp/h --max-pages 2
 .venv/bin/python examples/oai_to_sparql.py
 ```
+
+Service URLs (SPARQL endpoint, query UI, viewer) are set once under `extra:`
+in `mkdocs.yml` and used in the pages as `{{ sparql_endpoint }}`,
+`{{ query_ui }}` and `{{ kb_viewer }}`. `examples/oai_to_sparql.py` keeps
+a literal copy so it stays runnable on its own; `scripts/check_urls.py`
+(run in CI) fails the build if the two drift apart.

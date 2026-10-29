@@ -22,6 +22,18 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
+# Service URLs, used in the pages as {{ sparql_endpoint }} etc. Change a
+# domain here only. examples/oai_to_sparql.py carries its own copy of
+# sparql_endpoint; CI fails if the two differ.
+extra:
+  sparql_endpoint: https://sparql.zijdeman.nl
+  query_ui: https://kg.zijdeman.nl
+  kb_viewer: https://kb.zijdeman.nl
+
+plugins:
+  - search
+  - macros
+
 markdown_extensions:
   - admonition
   - attr_list

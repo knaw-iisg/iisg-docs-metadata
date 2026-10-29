@@ -49,9 +49,9 @@ GROUP BY ?authority ?type
 
 | | |
 |---|---|
-| Endpoint | `https://sparql.zijdeman.nl` (GET or POST, standard SPARQL 1.1 protocol) |
-| Query UI | <https://kg.zijdeman.nl> |
-| Browser | <https://kb.zijdeman.nl> |
+| Endpoint | `{{ sparql_endpoint }}` (GET or POST, standard SPARQL 1.1 protocol) |
+| Query UI | <{{ query_ui }}> |
+| Browser | <{{ kb_viewer }}> |
 
 Main vocabularies: [schema.org](https://schema.org) (`sdo:`),
 [RiC-O](https://www.ica.org/standards/RiC/ontology) for archives, MARC
